@@ -8,13 +8,13 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "https://puggypotato.github.io/math-tac-toe/", // Replace with your allowed website
+        origin: "https://puggypotato.github.io", // Replace with your allowed website
         methods: ["GET", "POST"]
     }
 });
 
 app.use(cors({
-    origin: "https://puggypotato.github.io/math-tac-toe/"
+    origin: "https://puggypotato.github.io"
 }));
 
 let games = {};
